@@ -1,0 +1,10 @@
+<div style="margin-left:8px;">
+<{if $user_summe}>
+  <{$user_summe}>
+<{/if}>
+<hr size="1" noshade>
+<{$user_raum_text}><br />
+<{foreach item=user from=$user_list}>
+  <{$user.icon}>&nbsp;&nbsp;<{$user.name}><br />
+<{/foreach}>
+</div>

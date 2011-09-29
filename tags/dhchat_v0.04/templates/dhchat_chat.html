@@ -1,0 +1,13 @@
+<{if $chat_count}>
+  <center><b><{$chat_count}></b></center>
+<{else}>
+  <{foreach item=mess from=$chat_msg}>
+    <{if $mess.date <>""}>
+      <{$mess.date}> <b>[<{$mess.user}>]</b> >> <{$mess.msg}>
+			<hr size="1" noshade>
+    <{else}>
+      &nbsp;
+    <{/if}>
+  <{/foreach}>
+<{/if}>
+
